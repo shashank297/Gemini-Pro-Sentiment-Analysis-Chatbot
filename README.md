@@ -77,3 +77,34 @@
 
 In conclusion, the analysis underscores the importance of addressing the limitations posed by the small dataset and the predisposition of the LLM model towards positive sentiment responses. By leveraging fine-tuning techniques with a classification model, there exists a promising avenue to substantially enhance result accuracy. This proactive approach not only mitigates potential biases but also ensures more dependable and precise outcomes in sentiment analysis tasks.
 
+## Steps to Install the Sentiment Analysis Chatbot Locally
+
+1. **Store Google LLM API Key**: 
+   - Store your Google LLM API key in the local environment with the name `GOOGLE_API_KEY`.
+
+2. **Create Virtual Environment**: 
+   - Create a virtual environment using conda:
+     ```bash
+     conda create -p venv python=3.9.19
+     ```
+
+3. **Activate the Virtual Environment**: 
+   - Activate the created environment using conda:
+     ```bash
+     conda activate ./venv
+     ```
+
+4. **Install Required Python Libraries**: 
+   - Install the required Python libraries listed in `requirements.txt` using pip:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+5. **Run the Chatbot Application**: 
+   - Execute the following command in the terminal to run the chatbot application:
+     ```bash
+     streamlit run qachat.py
+     ```
+
+Once these steps are completed, you should have the sentiment analysis chatbot up and running locally on your machine.
+
