@@ -18,7 +18,7 @@
 
 
 
-**Sentiment Analysis Examples:**
+**Sentiments  Examples:**
 
 1. **Positive Sentiments:**
    - With resilience and a positive mindset, I embrace setbacks as opportunities for growth and learning.
