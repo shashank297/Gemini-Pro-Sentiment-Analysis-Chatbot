@@ -15,7 +15,6 @@
 - Neutral Sentiments: 14.81%
 
 
-
 **Sentiment Analysis Examples:**
 
 1. **Positive Sentiments:**
