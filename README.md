@@ -1,5 +1,4 @@
-# NLP_chatbot_sentiment
-
+# sentiment analysis chatbot
 ## Text Generation and Sentiment Analysis Application
 
 ### Overview
@@ -27,7 +26,7 @@
 
 
 
-**Sentiment Analysis Report**
+## Sentiment Analysis Report
 
 **Date: 21-04-2024**
 
