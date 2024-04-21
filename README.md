@@ -13,6 +13,8 @@
 - Positive Sentiments: 72.22%
 - Negative Sentiments: 12.96%
 - Neutral Sentiments: 14.81%
+ 
+![output](https://github.com/shashank297/NLP_chatbot_sentiment/assets/67503481/9901e293-f5c5-4adb-825b-dff0c55ecc0a)
 
 
 
