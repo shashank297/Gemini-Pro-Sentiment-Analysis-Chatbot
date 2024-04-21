@@ -7,10 +7,10 @@ import os
 import google.generativeai as genai
 from utills import save_to_csv
 
-# try:
-#     genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
-# except:
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY")) 
+try:
+    genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
+except:
+    genai.configure(api_key=os.getenv("GOOGLE_API_KEY")) 
 
 ## function to load Gemini Pro model and get repsonses
 model=genai.GenerativeModel("gemini-pro") 
@@ -35,30 +35,18 @@ submit=st.button("Ask the question")
 
 if submit and input:
     response=get_gemini_response(f'{input} give me an responce within one line')
+
     # Add user query and response to session state chat history
     st.session_state['chat_history'].append(("You", input))
     st.subheader("The Response is")
-
-    # for chunk in response:
-    #     pass
-    #     # sentiment=get_sentiment_label(chunk.text)
-    #     # for_sentiment=format_sentiment(sentiment)
-    #     st.write(f'{chunk.text}' )                                       #{for_sentiment}',unsafe_allow_html=True
-    #     st.session_state['chat_history'].append(("Bot", f'{chunk.text} ')) #{for_sentiment}
-    #     # save_to_csv(input,chunk.text,sentiment)
-
-
     sentiment=get_sentiment_label(response.text)
     for_sentiment=format_sentiment(sentiment)
-    st.write(f"this for test responce {response.text} {for_sentiment}",unsafe_allow_html=True)
+    st.write(f"{response.text} {for_sentiment}",unsafe_allow_html=True)
     st.session_state['chat_history'].append(("Bot", f'{response.text} {for_sentiment}'))
     save_to_csv(input,response.text,sentiment)
 
 
 st.subheader("The Chat History is")
-
-
-# st.write(f"this for test{st.session_state['chat_history']}")
     
 for role, text in st.session_state['chat_history']:
     st.write(f"{role}: {text}",unsafe_allow_html=True)
