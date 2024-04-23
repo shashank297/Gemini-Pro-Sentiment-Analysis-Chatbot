@@ -3,7 +3,7 @@
 
 ### Overview
 - Utilized Google LLM Modal `Gemini-Pro` for text generation, providing superior response compared to smaller models available in Hugging Face.
-- Employed Hugging Face Modal `cardiffnlp/twitter-roberta-base-sentiment-latest` for text classification and sentiment analysis.
+- Employed Hugging Face Modal `cardiffnlp/twitter-roberta-base-sentiment-latest` for text classification and sentiment prediction.
 - Developed a Streamlit web page to display the classification results.
 - Deployed the model on a Streamlit website due to the expiration of AWS free tier.
 
