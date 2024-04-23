@@ -1,4 +1,4 @@
-# sentiment analysis chatbot
+# Sentiment Analysis Chatbot
 ## Text Generation and Sentiment Analysis Application
 
 ### Overview
